@@ -98,15 +98,17 @@ function Footer() {
             
               <ul className="contact-list">
                 <li>
-               <img src={images3} className='email'/>
+               <img src={images3} alt="Email" className='email'/>
                   
                   <div>
                     <div className="label">Email</div>
-                    <a href="tendulkarm2000@gmail.com"> tendulkarm2000@gmail.com</a>
+                    <a href="tendulkarm2000@gmail.com" target="_blank" rel="noreferrer">
+                      tendulkarm2000@gmail.com
+                    </a>
                   </div>
                 </li>
                 <li>
-                   <img src={images2} className='location'/>
+                   <img src={images2} alt="Phone" className='location'/>
                   <div>
                     <div className="label">Phone</div>
                     <a href="tel:+15551234567">+91  8056836369</a>
@@ -114,7 +116,7 @@ function Footer() {
                 </li>
                 <li>
                    
-                  <img src={images1} className='location'/>
+                  <img src={images1} alt="Location" className='location'/>
                   <div>
                     <div className="label">Location</div>
                     <span>Erode, Tamilnadu</span>
@@ -127,15 +129,15 @@ function Footer() {
               <h1>Follow me</h1>
             </div>
           <div className="socials">
-            <a href="https://www.linkedin./in/tendulkar-m-5789162a3" target="_blank" rel="noreferrer" aria-label="GitHub"><img src={images5} className='email2'onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
-            <a href="https://wa.me/918056836369" target="_blank" rel="noreferrer" aria-label="Whatsapp"><img src={images6} className='email2' onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
-            <a href="mailto:tendulkarm2000@gmail.com" aria-label="Gmail"><img src={images4} className='email2'/></a>
+            <a href="https://www.linkedin.com/in/tendulkar-m-5789162a3" target="_blank" rel="noreferrer" aria-label="GitHub"><img src={images5} alt="GitHub" className='email2'onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
+            <a href="https://wa.me/918056836369" target="_blank" rel="noreferrer" aria-label="Whatsapp"><img src={images6} alt="Whatsapp" className='email2' onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
+            <a href="mailto:tendulkarm2000@gmail.com" aria-label="Gmail"><img src={images4} alt="Gmail" className='email2'/></a>
           </div>
           </div>
         </div>
 
         <div className="bottom">
-         
+         s
           <span>© {new Date().getFullYear()} Tendulkar. All rights reserved.</span>
         </div>
       </div>
