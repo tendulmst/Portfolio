@@ -1,0 +1,253 @@
+ .skills {
+  padding: 6rem 0;
+  background: #0f172a;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.skills-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: 'Arial', sans-serif;
+  margin-top:-91px;
+}
+
+.title-underline {
+  width: 200px;
+  height: 2px;
+  margin: 0 auto 2rem auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+}
+
+.circular-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circular-progress-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress {
+  transform: rotate(-90deg);
+  filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.progress-bg {
+  stroke: #1e293b;
+}
+
+.progress-fill {
+  stroke: #00d4ff;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+
+/* Rotation animation for the entire SVG */
+.animate-rotate {
+  animation: rotateCircle 2s ease-in-out;
+}
+
+/* Drawing animation for the progress fill */
+.animate-draw {
+  animation: drawProgress 2s ease-in-out;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(-90deg) scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-90deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes drawProgress {
+  0% {
+    stroke-dashoffset: 100%;
+    stroke-opacity: 0;
+  }
+  50% {
+    stroke-opacity: 0.7;
+  }
+  100% {
+    stroke-dashoffset: var(--stroke-dashoffset);
+    stroke-opacity: 1;
+  }
+}
+
+.percentage-text {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.skill-name {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.syntax-studio-logo {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo-bracket {
+  font-size: 1.5rem;
+  color: #22c55e;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-main {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 0;
+    min-height: auto;
+  }
+  
+  .skills-container {
+    padding: 0 1rem;
+  }
+  
+  .skills-title {
+    font-size: 2.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 400px;
+  }
+  
+  .circular-progress {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .percentage-text {
+    font-size: 1.25rem;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+  }
+  
+  .syntax-studio-logo {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 300px;
+  }
+  
+  .circular-progress {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .percentage-text {
+    font-size: 1rem;
+  }
+  
+  .skill-name {
+    font-size: 0.9rem;
+  }
+  
+  .logo-main {
+    font-size: 1rem;
+  }
+  
+  .logo-sub {
+    font-size: 0.75rem;
+  }
+}
+
+
