@@ -33,7 +33,7 @@ function Footer() {
   const whatsappNumber = "918056836369"; // ✅ your number (no +)
 
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
-  window.open(url, "_blank");
+  window.open(url, "_blank");                 
 };
   return (
     <footer className="footer" id="contact">
@@ -130,8 +130,8 @@ function Footer() {
             </div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/tendulkar-m-5789162a3" target="_blank" rel="noreferrer" aria-label="GitHub"><img src={images5} alt="GitHub" className='email2'onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
-            <a href="https://wa.me/918056836369" target="_blank" rel="noreferrer" aria-label="Whatsapp"><img src={images6} alt="Whatsapp" className='email2' onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
-            <a href="mailto:tendulkarm2000@gmail.com" aria-label="Gmail"><img src={images4} alt="Gmail" className='email2'/></a>
+            <a href="https://wa.me/918056836369" target="_blank" rel="noreferrer" aria-label="Whatsapp"><img src={images6} alt="Whatsapp" className='email2' onClick={() => window.open("https://wa.me/918056836369")}/></a>
+            <a href="mailto:tendulkarm2000@gmail.com" aria-label="Gmail"><img src={images4} alt="Gmail" className='email2' onClick={() => window.open("mailto:tendulkarm2000@gmail.com")}/></a>
           </div>
           </div>
         </div>

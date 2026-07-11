@@ -70,17 +70,27 @@ const Skills = () => {
     }, []);
 
     return (
-      <div style={cardStyle}>
+      <div style={{ ...cardStyle, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
         <h3 style={{ ...cardTitleStyle, fontSize: '18px' }}>Tools & Others</h3>
-        <div className="skills-grid" ref={ref} style={{ gap: '24px', maxWidth: 'unset', margin: 0 }}>
+        <div
+          className="skills-grid"
+          ref={ref}
+          style={{
+            gap: '14px',
+            maxWidth: '250px',
+            margin: '0 auto',
+            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+            alignItems: 'center'
+          }}
+        >
           {Tools.map((skill, index) => (
             <CircularProgress
               key={index}
               percentage={skill.percentage}
               name={skill.name}
               index={index}
-              size={100}
-              textScale={0.8}
+              size={92}
+              textScale={0.82}
               visible={visible}
             />
           ))}
@@ -157,16 +167,16 @@ const Skills = () => {
 const cardsRowStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-  gap: '24px',
-  marginBottom: '48px'
+  gap: '20px',
+  marginBottom: '20px'
 };
 
 const cardStyle = {
   background: 'rgba(15, 23, 42, 0.9)',
   border: '1px solid rgba(255, 255, 255, 0.83)',
   borderRadius: '14px',
-  padding: '24px',
-  boxShadow: '0 10px 30px rgba(0,0,0,0.25)'
+  padding: '18px 18px 14px',
+  boxShadow: '0 8px 24px rgba(0,0,0,0.22)'
 };
 
 const cardTitleStyle = {

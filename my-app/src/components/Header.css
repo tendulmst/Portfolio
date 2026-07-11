@@ -16,7 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  gap: 1rem;
+  min-height: 70px;
 }
 
 .logo {
@@ -67,17 +68,48 @@
 .nav-link:hover::after {
   width: 100%;
 }
- 
-@media (max-width: 768px) {
+
+@media (max-width: 900px) {
   .header-container {
     padding: 0 1rem;
   }
-  
+
   .nav-list {
     gap: 1rem;
   }
-  
+}
+
+@media (max-width: 640px) {
+  .header {
+    position: sticky;
+  }
+
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    min-height: auto;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem 0.9rem;
+  }
+
   .nav-link {
     font-size: 0.9rem;
   }
 }
+
+

@@ -1,10 +1,12 @@
-import React from 'react';
+ import React from 'react';
 import Typewriter from "typewriter-effect";
 import './Hero.css';
 import image1 from './images/github.png';
 import image2 from './images/li.png';
 import image3 from './images/gmail.png';
 import arrow from './images/arrow.png';
+
+
 
 const Hero = () => {
   const scrollToWork = () => {
@@ -19,7 +21,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <p className="greeting">Hello, I'm</p>
-          <h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
               
              <Typewriter
                    options={{

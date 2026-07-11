@@ -1,9 +1,9 @@
  .skills {
-  padding: 6rem 0;
+  padding: 4.5rem 0 2.5rem;
   background: #0f172a;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
 }
@@ -28,7 +28,7 @@
   color: #ffffff;
   margin-bottom: 1rem;
   font-family: 'Arial', sans-serif;
-  margin-top:-91px;
+  margin-top:-26px;
 }
 
 .title-underline {
@@ -40,9 +40,9 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 1.5rem;
   max-width: 600px;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 0 auto;
 }
 
 .circular-skill {
@@ -60,7 +60,8 @@
 }
 
 .circular-progress {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) scale(1.16);
+  transform-origin: center;
   filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
   transition: transform 0.3s ease;
 }
@@ -174,40 +175,29 @@
   line-height: 1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+#skills {
+  scroll-margin-top: -40px;
+}
+@media (max-width: 900px) {
   .skills {
-    padding: 4rem 0;
+    padding: 3.8rem 0 1.8rem;
     min-height: auto;
   }
-  
+
   .skills-container {
     padding: 0 1rem;
   }
-  
+
   .skills-title {
-    font-size: 2.5rem;
+    margin-top: 0;
+    font-size: 1.3rem;
   }
-  
+
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 400px;
+    max-width: 480px;
   }
-  
-  .circular-progress {
-    height: 100px;
-    width: 100px;
-  }
-  
-  .percentage-text {
-    font-size: 1.25rem;
-  }
-  
-  .skill-name {
-    font-size: 1rem;
-  }
-  
+
   .syntax-studio-logo {
     position: relative;
     bottom: auto;
@@ -217,34 +207,32 @@
   }
 }
 
-@media (max-width: 480px) {
-  .skills-title {
-    font-size: 2rem;
-  }
-  
+@media (max-width: 640px) {
   .skills-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 300px;
+    gap: 1rem;
+    max-width: 280px;
+    margin-bottom: 0;
   }
-  
+
   .circular-progress {
-    height: 80px;
-    width: 80px;
+    width: 90px;
+    height: 90px;
+    transform: rotate(-90deg) scale(1.1);
   }
-  
+
   .percentage-text {
+    font-size: 1.2rem;
+  }
+
+  .skill-name {
     font-size: 1rem;
   }
-  
-  .skill-name {
-    font-size: 0.9rem;
-  }
-  
+
   .logo-main {
     font-size: 1rem;
   }
-  
+
   .logo-sub {
     font-size: 0.75rem;
   }

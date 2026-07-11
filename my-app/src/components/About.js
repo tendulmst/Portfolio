@@ -25,7 +25,7 @@ const About = () => {
             </h3>
             
             <p className="about-text">
-              I'm a passionate Full Stack Developer and B.Tech Information Technology student with a strong interest in building dynamic, user-focused web applications. I enjoy working across both frontend and backend technologies — turning ideas into interactive and efficient digital solutions.
+                    I'm a passionate Full Stack Developer and B.Tech Information Technology student with a strong interest in building dynamic, user-focused web applications. I enjoy working across both frontend and backend technologies — turning ideas into interactive and efficient digital solutions.
 
             </p>
             
