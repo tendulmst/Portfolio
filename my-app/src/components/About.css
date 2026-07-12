@@ -115,7 +115,7 @@
   transition: all 0.3s ease;
   cursor: default;
   left: 36px;
-  background: #4e7c6e;
+  background: transparent;
   cursor: pointer;
 }
 

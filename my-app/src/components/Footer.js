@@ -131,7 +131,7 @@ function Footer() {
           <div className="socials">
             <a href="https://www.linkedin.com/in/tendulkar-m-5789162a3" target="_blank" rel="noreferrer" aria-label="GitHub"><img src={images5} alt="GitHub" className='email2'onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")}/></a>
             <a href="https://wa.me/918056836369" target="_blank" rel="noreferrer" aria-label="Whatsapp"><img src={images6} alt="Whatsapp" className='email2' onClick={() => window.open("https://wa.me/918056836369")}/></a>
-            <a href="mailto:tendulkarm2000@gmail.com" aria-label="Gmail"><img src={images4} alt="Gmail" className='email2' onClick={() => window.open("mailto:tendulkarm2000@gmail.com")}/></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com" target="_blank" rel="noreferrer" aria-label="Gmail"><img src={images4} alt="Gmail" className='email2' onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com")}/></a>
           </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ const About = () => {
             </p>
             
             <p className="about-text">
-              I have hands-on experience with React.js, Node.js, Express, and MongoDB, and I love exploring modern frameworks and tools to create clean, responsive, and scalable applications. Beyond coding, I focus on writing maintainable code, solving real-world problems, and continuously learning emerging technologies.
+              I have hands-on experience with Java, MySQL, ReactJs, and I love exploring modern frameworks and tools to create clean, responsive, and scalable applications. Beyond coding, I focus on writing maintainable code, solving real-world problems, and continuously learning emerging technologies.
 
             </p>
 
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
                 <h4 className="value-title">Frontend Development</h4>
                 <p className="value-description">
-                  Skilled in building responsive and dynamic web apps using React.js and Proficient with Tailwind CSS and modern component libraries
+                  Skilled in building responsive and dynamic web apps using React.js and Proficient with HTML,CSS and modern component libraries
                 </p>
               </div>
               

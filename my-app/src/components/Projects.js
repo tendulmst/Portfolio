@@ -6,7 +6,7 @@ const projects = [
     title: 'Expense Tracker',
     desc:   'An expense tracker is a tool that helps individuals or businesses monitor and manage their financial transactions, allowing them to track income, expenses, and overall financial health.',
     image: 'https://media.istockphoto.com/id/1255527277/photo/communication-network-concept-iot-telecommunication.jpg?s=2048x2048&w=is&k=20&c=pgxxgSEWXsdPbXWs6daIUM5V2tqaDy9rs1HtR_l4uso=',
-    tags: [ 'Spring Boot','MySQL','HTML','CSS' ],
+    tags: [ 'Java','MySQL','HTML','CSS' ],
     live: '#'
   },
   {

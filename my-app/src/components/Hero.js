@@ -57,10 +57,11 @@ const Hero = () => {
               </a>
                <img src={image2}  className="img2" alt="Descriptive text" width="20" onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")} />
 
-              <a href="mailto:tendulkarm2000@gmail.com" className="social-link" aria-label="Email">
+              <a href=" https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com" target="_blank"
+rel="noopener noreferrer" className="social-link" aria-label="Email">
                 <i className="fas fa-envelope"></i>
               </a>
-               <img src={image3}  className="img3" alt="Email" width="20" onClick={() => window.open("mailto:tendulkarm2000@gmail.com")} />
+               <img src={image3}  className="img3" alt="Email" width="20" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com")} />
                <div>
                <img src={arrow}  className="arr" alt="Descriptive text" width="20" />
                </div>
