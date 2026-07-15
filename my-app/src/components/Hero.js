@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import Typewriter from "typewriter-effect";
 import './Hero.css';
 import image1 from './images/github.png';
@@ -48,23 +48,20 @@ const Hero = () => {
             </button>
             <div className="social-links">
               <a href="https://github.com/tendulmst" className="social-link" aria-label="GitHub">
-                <i className="fab fa-github"></i>
+                <img src={image1} className="social-icon" alt="GitHub" />
               </a>
-                <img src={image1}  className="img1" alt="Descriptive text" width="20" onClick={() => window.open("https://github.com/tendulmst")} />
 
-              <a href="https://www.linkedin./in/tendulkar-m-5789162a3" className="social-link" aria-label="LinkedIn">
-                <i className="fab fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/in/tendulkar-m-5789162a3" className="social-link" aria-label="LinkedIn">
+                <img src={image2} className="social-icon1" alt="LinkedIn" />
               </a>
-               <img src={image2}  className="img2" alt="Descriptive text" width="20" onClick={() => window.open("https://www.linkedin.com/in/tendulkar-m-5789162a3")} />
 
-              <a href=" https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com" target="_blank"
-rel="noopener noreferrer" className="social-link" aria-label="Email">
-                <i className="fas fa-envelope"></i>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com" target="_blank"
+                rel="noopener noreferrer" className="social-link" aria-label="Email">
+                <img src={image3} className="social-icon2" alt="Email" />
               </a>
-               <img src={image3}  className="img3" alt="Email" width="20" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=tendulkarm2000@gmail.com")} />
-               <div>
-               <img src={arrow}  className="arr" alt="Descriptive text" width="20" />
-               </div>
+              <div>
+                <img src={arrow} className="arr" alt="Descriptive text" width="20" />
+              </div>
             </div>
           </div>
         </div>

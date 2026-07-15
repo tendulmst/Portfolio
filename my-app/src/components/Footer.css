@@ -188,9 +188,7 @@
   height: 15px;
   width: 15px;
 }
-#Footer {
-  scroll-margin-top: -100px;
-}
+ 
 @media (max-width: 900px) {
   .footer {
     padding: 4rem 0 2rem;

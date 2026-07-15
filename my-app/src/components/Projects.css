@@ -121,6 +121,97 @@
   font-size: 15px;
 }
 
+.gallery-section {
+  margin-top: 6rem;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(1, 47, 32, 0.12), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  box-shadow: 0 20px 40px rgba(2, 8, 23, 0.25);
+}
+
+.gallery-heading {
+  margin-bottom: 1.25rem;
+}
+
+.gallery-heading h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 0 0.35rem;
+}
+
+.gallery-heading p {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid--secondary {
+  margin-top: 1rem;
+}
+
+.gallery-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 24px rgba(2, 8, 23, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(16, 185, 129, 0.16);
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-expandable {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease, opacity 0.35s ease;
+}
+
+.gallery-expandable.is-open {
+  max-height: 900px;
+  opacity: 1;
+}
+
+.gallery-toggle {
+  margin-top: 1.2rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  color: #052e16;
+  background: linear-gradient(135deg, #34d399, #10b981);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 22px rgba(16, 185, 129, 0.25);
+}
+
+.gallery-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(16, 185, 129, 0.32);
+}
+
+.gallery-toggle:focus-visible {
+  outline: 2px solid #d1fae5;
+  outline-offset: 3px;
+}
+
 #projects {
   scroll-margin-top: -60px;
 }
@@ -133,6 +224,10 @@
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -161,6 +256,18 @@
   .project-desc {
     font-size: 0.85rem;
     line-height: 1.5;
+  }
+
+  .gallery-section {
+    padding: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: 200px;
   }
 }
 

@@ -115,7 +115,7 @@
   transition: all 0.3s ease;
   cursor: default;
   left: 36px;
-  background: transparent;
+  background: #10b981;
   cursor: pointer;
 }
 
@@ -150,7 +150,7 @@
 
 .value-card:hover {
   transform: scale(1.03);
-  border-color: #c87bf2;
+  border-color: #0c9561;
 }
 
 .value-card .pic1 {
