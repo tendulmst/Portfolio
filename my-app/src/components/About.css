@@ -175,8 +175,15 @@
   color: #ffffff;
 }
 
-.value-title {
+.value-title{
   font-size: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.value-title1{
+  font-size: 0.9rem;
   text-align: left;
   font-weight: 600;
   color: #ffffff;

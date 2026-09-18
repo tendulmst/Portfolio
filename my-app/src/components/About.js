@@ -87,9 +87,9 @@ const About = () => {
                   <i className="fas fa-coffee"></i>
                 </div>
                  <img src={pic1}  className="pic1" alt="Descriptive text" width="20" />
-                <h4 className="value-title">UI/UX Design</h4>
+                <h4 className="value-title1">Development and AI Tools - GitHub Copilot, Cloud AI</h4>
                 <p className="value-description">
-                 Knowledge of Figma, Canva, and UI principles and Focus on user-friendly and accessible design.
+                  AI-assisted coding, debugging, code explanation, documentation, and exploring development solutions.
                 </p>
               </div>
             </div>

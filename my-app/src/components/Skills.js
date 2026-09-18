@@ -19,8 +19,8 @@ const Skills = () => {
   const  Tools = [
     { name: 'Github', percentage: 75 },
     { name: 'Vercel', percentage: 60 },
-    { name: 'Docker', percentage: 55 },
-    { name: 'AWS', percentage: 30 }
+    { name: 'Copilot', percentage: 55 },
+    { name: 'Cloud AI', percentage: 30 }
   ];
 
   const ProgressCard = ({ title, items }) => {

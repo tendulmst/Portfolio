@@ -59,7 +59,7 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-footer">
-                  <a className="live-btn" href={p.live} target="_blank" rel="noreferrer">View project</a>
+                  <a className="live-btn" href={p.live} target="_blank" rel="noreferrer">.</a>
                 </div>
               </div>
             </article>
